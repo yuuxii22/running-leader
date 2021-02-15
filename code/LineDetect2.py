@@ -140,7 +140,7 @@ def calculateSteering(leftClusters, rightClusters, velocity=None, timeToReach=No
         else:
             angleRad = 0
     else:
-        angleRad = math.asin(errX/max((WIDTH/2),errX))
+        angleRad = math.asin(errX/max((WIDTH/2),abs(errX)))
     
     #print(angleRad)
 
